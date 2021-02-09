@@ -2,7 +2,7 @@
     "name": "vue-electron-ca",
     "version": "0.1.0",
     "private": true,
-    "main": "src/index.js",
+    "main": "src/background.js",
     "scripts": {
         "start": "electron src",
         "serve": "vue-cli-service serve",
@@ -13,10 +13,10 @@
         "postinstall": "electron-builder install-app-deps",
         "postuninstall": "electron-builder install-app-deps"
     },
-
     "dependencies": {
         "core-js": "^3.6.5",
         "electron": "^11.2.3",
+        "pcsclite": "^1.0.0",
         "roboto-fontface": "*",
         "vue": "^2.6.11",
         "vuetify": "^2.4.3",
