@@ -9,7 +9,8 @@
 <script>
 /* eslint-disable */
 import { ca } from 'win-ca/api'
-import { withOut } from 'without'
+import withOut from 'without'
+
 export default {
   name: 'Certs',
    data() {
@@ -56,4 +57,5 @@ textarea {
   width: 100%;
   height: 12em;
 }
+
 </style>

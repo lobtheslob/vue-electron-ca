@@ -12,6 +12,7 @@
     "roboto-fontface": "*",
     "vue": "^2.6.11",
     "vuetify": "^2.4.0",
+    "win-ca": "^3.4.5",
     "without": "^1.2.3"
   },
   "devDependencies": {
