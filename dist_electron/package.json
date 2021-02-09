@@ -14,9 +14,12 @@
   "main": "background.js",
   "dependencies": {
     "core-js": "^3.6.5",
-    "dxe-va-shared": "file:../../Users/paul.russavage/Downloads/dxe-va-shared-0.2.10/dxe-va-shared-0.2.10.tar",
+    "electron": "^11.2.3",
+    "roboto-fontface": "*",
     "vue": "^2.6.11",
-    "vuetify": "^2.4.0"
+    "vuetify": "^2.4.3",
+    "win-ca": "^3.4.5",
+    "without": "^1.2.3"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "~4.5.0",
@@ -46,7 +49,9 @@
     "parserOptions": {
       "parser": "babel-eslint"
     },
-    "rules": {}
+    "rules": {
+      "emitWarning": 0
+    }
   },
   "browserslist": [
     "> 1%",

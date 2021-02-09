@@ -41,7 +41,7 @@ export default {
       }
       function render(list) {
            for (let pem of roots) {
-              console.log(pem)
+              button(pem)
           }
       }
     }
