@@ -1,4 +1,4 @@
-const ca = require('win-ca/api')
+const ca = require('win-ca')
 const withOut = require('without')
 const forge = require('node-forge')
 

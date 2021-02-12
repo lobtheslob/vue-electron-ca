@@ -1,9 +1,12 @@
+/* eslint-disable */
+
+const pcsc = require('pcsclite');
+
 module.exports = function smartCard() {
 
-    var pcsc = require('pcsclite');
 
-    var pcsc = pcsc();
-    pcsc.on('reader', function(reader) {
+    let pc = pcsc();
+    pc.on('reader', function(reader) {
 
         console.log('New reader detected', reader.name);
 
@@ -38,7 +41,7 @@ module.exports = function smartCard() {
                                 } else {
                                     console.log('Data received', data);
                                     reader.close();
-                                    pcsc.close();
+                                    pc.close();
                                 }
                             });
                         }
@@ -52,7 +55,7 @@ module.exports = function smartCard() {
         });
     });
 
-    pcsc.on('error', function(err) {
+    pc.on('error', function(err) {
         console.log('PCSC error', err.message);
     });
 }

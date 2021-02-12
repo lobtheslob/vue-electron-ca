@@ -34,6 +34,19 @@ async function createWindow() {
     }
 }
 
+// let wnd = null
+
+// async function main() {
+//     wnd = new BrowserWindow({
+//         webPreferences: {
+//             nodeIntegration: true,
+//             allowEval: false,
+//         }
+//     })
+//     wnd.loadFile(path.join(__dirname, 'index.html'))
+//     wnd.on('close', quit)
+// }
+
 // Quit when all windows are closed.
 app.on('window-all-closed', () => {
     // On macOS it is common for applications and their menu bar
@@ -62,6 +75,7 @@ app.on('ready', async() => {
         }
     }
     createWindow()
+        // main()
 })
 
 app.allowRendererProcessReuse = false
