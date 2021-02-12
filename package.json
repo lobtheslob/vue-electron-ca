@@ -2,7 +2,7 @@
     "name": "vue-electron-ca",
     "version": "0.1.0",
     "private": true,
-    "main": "src/background.js",
+    "main": "index.js",
     "scripts": {
         "start": "electron src",
         "serve": "vue-cli-service serve",
@@ -15,7 +15,7 @@
     },
     "dependencies": {
         "core-js": "^3.6.5",
-        "electron": "^11.2.3",
+        "node-loader": "^1.0.2",
         "pcsclite": "^1.0.0",
         "roboto-fontface": "*",
         "vue": "^2.6.11",
@@ -28,7 +28,7 @@
         "@vue/cli-plugin-eslint": "~4.5.0",
         "@vue/cli-service": "~4.5.0",
         "babel-eslint": "^10.1.0",
-        "electron": "^10.0.0",
+        "electron": "^11.2.3",
         "electron-devtools-installer": "^3.1.0",
         "eslint": "^6.7.2",
         "eslint-plugin-vue": "^6.2.2",
