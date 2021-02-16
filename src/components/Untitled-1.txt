@@ -1,0 +1,10 @@
+
+
+1. Installer - asp.net env for cerner
+    a. 409 build
+        i. full env setup
+        ii. launching DXE - Powerchart 
+            -> blank on login 
+            FHIR backend -> calls
+            redirect proxy (where is the config)? ->
+

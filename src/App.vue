@@ -16,7 +16,18 @@ export default {
   components: {
     HelloWorld,
     NewComponent
-  }
+  },
+   methods: {
+      test(){
+        window.ipcRenderer.send('hello') // or any other ipcRenderer method you want to invoke
+    },
+
+    //   mounted() {
+    //     ipc.on('chanel', (event, message) => {
+    //       console.log(message);
+    //       console.log(event);
+    // });
+    }
 }
 </script>
 
